@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réservation &mdash; Chic & Trendy</title>
+<meta name="description" content="Réservez en 1 minute, 24h/24, au salon Chic & Trendy à Yverdon-les-Bains. Formulaire de demande de rendez-vous en ligne.">
+<meta property="og:title" content="Réservation &mdash; Chic & Trendy">
+<meta property="og:description" content="Réservez en 1 minute, 24h/24, au salon Chic & Trendy à Yverdon-les-Bains. Formulaire de demande de rendez-vous en ligne.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Chic & Trendy",
+"address":{"@type":"PostalAddress","streetAddress":"Rue de la Plaine 67","postalCode":"1400","addressLocality":"Yverdon-les-Bains","addressRegion":"Vaud","addressCountry":"CH"},
+"telephone":"+41 24 425 22 20","email":"sandrine.jeanmonod@bluewin.ch",
+"founder":{"@type":"Person","name":"Sandrine Jeanmonod Quaroni"},
+"foundingDate":"2017-10-18",
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","bestRating":"5","reviewCount":"3"},
+"url":"https://chic-trendy-yverdon-proposal.vercel.app"}
+</script>
+</head><body>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px">Aller au contenu</a>
+<header class="site-header"><div class="header-in">
+<a class="brand" href="index.html"><span class="brand-name">Chic <em>&amp; Trendy</em></span><span class="brand-sub">HAUTE COIFFURE &bull; YVERDON</span></a>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+<nav class="main-nav" id="main-nav" aria-label="Navigation principale"><a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="services.html">Services & Tarifs</a><a class="nav-link" href="galerie.html">Galerie</a><a class="nav-link" href="mariees.html">Mariées</a><a class="nav-link" href="reservation.html" aria-current="page">Réservation</a><a class="nav-link" href="contact.html">Contact</a>
+<a class="header-phone" href="tel:0244252220">024 425 22 20</a>
+<a class="btn btn-primary btn-sm" href="reservation.html">R&eacute;server</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Atelier de haute coiffure &bull; Yverdon</p>
+<h1 style="font-size:clamp(48px,6.5vw,84px)">R&eacute;servez en 1 minute,<br><em>24h/24.</em></h1>
+<p class="hero-sub">La prise de rendez-vous en ligne de l&rsquo;atelier : choisissez votre prestation, indiquez vos coordonn&eacute;es, et l&rsquo;atelier vous confirme personnellement.</p>
+<p class="hero-sub" style="margin-top:12px">Assistance t&eacute;l&eacute;phonique : <a href="tel:0244252220" style="color:var(--champagne)">024 425 22 20</a> &mdash; ligne directe pour convenir d&rsquo;un cr&eacute;neau.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="steps" style="margin-bottom:48px">
+<div class="step" data-reveal><span class="sec-num">01</span><h3>S&eacute;lection &amp; cr&eacute;neau</h3><p>Choisissez la prestation recherch&eacute;e et indiquez votre p&eacute;riode de pr&eacute;dilection en quelques clics.</p></div>
+<div class="step" data-reveal><span class="sec-num">02</span><h3>Coordonn&eacute;es &amp; diagnostic</h3><p>Renseignez vos coordonn&eacute;es directes et pr&eacute;cisez l&rsquo;historique de vos cheveux ou vos besoins nuptiaux.</p></div>
+<div class="step" data-reveal><span class="sec-num">03</span><h3>Validation</h3><p>L&rsquo;atelier valide personnellement votre demande par contact direct.</p></div>
+</div>
+
+<div class="two-col">
+<div class="form-box" data-reveal>
+<p class="eyebrow">Formulaire de consultation priv&eacute;e</p>
+<h2>Votre demande de rendez-vous</h2>
+<p>Ce formulaire est une d&eacute;monstration : aucune donn&eacute;e n&rsquo;est transmise &agrave; un serveur. En production, il sera reli&eacute; &agrave; l&rsquo;outil de r&eacute;servation choisi par le salon <span class="aconfirm">[&Agrave; CONFIRMER : Planity / Salonkee / autre]</span>.</p>
+<form id="booking-form" novalidate>
+<div class="field"><label for="prestation">Prestation souhait&eacute;e <span class="req">*</span></label>
+<select id="prestation" name="prestation" required autocomplete="off">
+<option value="">S&eacute;lectionnez votre prestation&hellip;</option>
+<option value="coupe-dame">Coupe Dame &amp; Styling</option>
+<option value="coupe-homme">Coupe Homme &amp; Soin</option>
+<option value="couleur">Couleur / M&egrave;ches / Balayage</option>
+<option value="mariee">Coiffure Mari&eacute;e &amp; Essai</option>
+<option value="extensions">Extensions &amp; Volum&eacute;trie</option>
+<option value="perruque">Perruque &amp; Conseil Capillaire</option>
+<option value="autre">Autre demande sp&eacute;cifique</option>
+</select><p class="field-error">Choisissez une prestation.</p></div>
+<div class="field-row">
+<div class="field"><label for="date">Date souhait&eacute;e <span class="req">*</span></label>
+<input type="date" id="date" name="date" required><p class="field-error">Indiquez une date.</p></div>
+<div class="field"><label>Cr&eacute;neau de pr&eacute;f&eacute;rence <span class="req">*</span></label>
+<div class="radio-group" role="radiogroup" aria-label="Cr&eacute;neau de pr&eacute;f&eacute;rence">
+<label class="radio-pill"><input type="radio" name="creneau" value="matin" checked><span>Matin</span></label>
+<label class="radio-pill"><input type="radio" name="creneau" value="apres-midi"><span>Apr&egrave;s-midi</span></label>
+<label class="radio-pill"><input type="radio" name="creneau" value="fin-de-jour"><span>Fin de jour</span></label>
+</div></div></div>
+<div class="field"><label for="nom">Nom &amp; pr&eacute;nom <span class="req">*</span></label>
+<input type="text" id="nom" name="nom" required autocomplete="name"><p class="field-error">Indiquez votre nom complet.</p></div>
+<div class="field-row">
+<div class="field"><label for="telephone">Num&eacute;ro de t&eacute;l&eacute;phone <span class="req">*</span></label>
+<input type="tel" id="telephone" name="telephone" required autocomplete="tel"><p class="field-error">Indiquez un num&eacute;ro joignable.</p></div>
+<div class="field"><label for="email">Adresse e-mail <span class="req">*</span></label>
+<input type="email" id="email" name="email" required autocomplete="email"><p class="field-error">Indiquez une adresse e-mail valide.</p></div></div>
+<div class="field"><label for="notes">Notes ou souhaits particuliers</label>
+<textarea id="notes" name="notes" placeholder="Facultatif : d&eacute;crivez vos envies, votre historique capillaire&hellip;"></textarea></div>
+<div class="consent"><input type="checkbox" id="consent" name="consent" required>
+<label for="consent">Vos donn&eacute;es servent uniquement &agrave; confirmer votre rendez-vous.</label></div>
+<p class="field-error" id="consent-error" style="margin:-12px 0 20px">Merci de cocher la case de consentement.</p>
+<button class="btn btn-primary" type="submit" style="width:100%">Envoyer ma demande de r&eacute;servation</button>
+</form>
+<div class="form-success" id="booking-success" role="status">
+<h3>Demande bien re&ccedil;ue.</h3>
+<p>Merci : votre demande de rendez-vous a bien &eacute;t&eacute; enregistr&eacute;e dans cette d&eacute;monstration. L&rsquo;atelier vous recontactera pour confirmer votre cr&eacute;neau.</p>
+<a class="btn btn-ghost" href="tel:0244252220">Ou appeler le 024 425 22 20</a></div>
+</div>
+
+<div data-reveal>
+<div class="info-list">
+<div class="info-row"><span class="label">Interlocution exclusive</span><span>Vous pr&eacute;f&eacute;rez nous joindre directement&nbsp;? Pour une prestation de mari&eacute;e ou un rendez-vous confidentiel, appelez l&rsquo;atelier.</span></div>
+<div class="info-row"><span class="label">Direction de l&rsquo;atelier</span><span>Sandrine Jeanmonod Quaroni</span></div>
+<div class="info-row"><span class="label">Ligne t&eacute;l&eacute;phonique directe</span><span><a href="tel:0244252220">024 425 22 20</a></span></div>
+<div class="info-row"><span class="label">Adresse de l&rsquo;atelier</span><address>Rue de la Plaine 67<br>1400 Yverdon-les-Bains, Suisse</address></div>
+<div class="info-row"><span class="label">Horaires d&rsquo;ouverture</span><span><span class="aconfirm">[&Agrave; CONFIRMER]</span></span></div>
+</div>
+<div class="note"><b>Future mari&eacute;e&nbsp;?</b> Pour un accompagnement complet &mdash; essai, coiffure le jour J et accueil de vos demoiselles d&rsquo;honneur &mdash; d&eacute;couvrez <a href="mariees.html" style="color:var(--champagne)">l&rsquo;univers mari&eacute;es</a>.</div>
+<h3 style="margin-top:40px">Venir &agrave; l&rsquo;atelier</h3>
+<p style="color:var(--muted);margin-top:10px">Situ&eacute; au c&oelig;ur d&rsquo;Yverdon-les-Bains, &agrave; la Rue de la Plaine 67. Itin&eacute;raire et stationnement : <a href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+la+Plaine+67%2C+1400+Yverdon-les-Bains" style="color:var(--champagne)">voir sur la carte</a>.</p>
+</div></div></div></section>
+<div class="cta-band"><div class="wrap" data-reveal>
+<p class="eyebrow">Atelier Chic &amp; Trendy &bull; Yverdon-les-Bains</p><h2>Votre prochaine coupe commence ici.</h2><p>Une minute suffit pour envoyer votre demande &mdash; l&rsquo;atelier s&rsquo;occupe du reste.</p>
+<div class="btn-row"><a class="btn btn-dark" href="reservation.html">R&eacute;server votre rendez-vous</a>
+<a class="btn btn-ghost" href="tel:0244252220">Appeler le 024 425 22 20</a></div></div></div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand"><span class="brand-name">Chic <em>&amp; Trendy</em></span>
+<p style="margin-top:14px">Atelier de haute coiffure &agrave; Yverdon-les-Bains. Un salon &agrave; taille humaine, en activit&eacute; depuis le 18 octobre 2017.</p>
+<p style="margin-top:14px">Statut : actif &bull; UID CHE-114.493.626</p></div>
+<div><h4>L&rsquo;atelier</h4><address>Rue de la Plaine 67, 1400 Yverdon-les-Bains<br>1400 Yverdon-les-Bains, Suisse<br>En activit&eacute; depuis le 18 octobre 2017<br>Direction : Sandrine Jeanmonod Quaroni</address></div>
+<div><h4>Contact &amp; horaires</h4>
+<a href="tel:0244252220">T&eacute;l&eacute;phone : 024 425 22 20</a><a href="mailto:sandrine.jeanmonod@bluewin.ch">sandrine.jeanmonod@bluewin.ch</a>
+<p style="margin-top:10px">Horaires : <span class="aconfirm">[&Agrave; CONFIRMER]</span></p></div>
+<div><h4>Navigation</h4>
+<a href="index.html">Accueil</a><a href="services.html">Services &amp; Tarifs</a><a href="galerie.html">Galerie</a><a href="mariees.html">Mari&eacute;es</a><a href="reservation.html">R&eacute;servation</a><a href="contact.html">Contact</a></div>
+</div>
+<div class="foot-bottom"><span>&copy; <span id="foot-year">2026</span> Chic & Trendy &bull; Sandrine Jeanmonod Quaroni. Tous droits r&eacute;serv&eacute;s.</span>
+<span><a href="mentions-legales.html">Mentions l&eacute;gales</a> &nbsp;&middot;&nbsp; <a href="confidentialite.html">Confidentialit&eacute;</a> &nbsp;&middot;&nbsp; <a href="cookies.html">Cookies</a></span></div>
+</div></footer>
+<a class="sticky-cta" href="reservation.html">R&eacute;server &mdash; 024 425 22 20</a>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="T&eacute;moins de navigation">
+<p><b>T&eacute;moins strictement n&eacute;cessaires.</b> Ce site utilise uniquement des t&eacute;moins techniques, n&eacute;cessaires &agrave; la navigation et &agrave; la s&eacute;lection de vos prestations. Aucun traceur publicitaire, aucune donn&eacute;e vendue.</p>
+<div class="btn-row"><a class="btn btn-ghost btn-sm" href="cookies.html">En savoir plus</a><button class="btn btn-primary btn-sm" id="cookie-accept" type="button">Accepter</button></div>
+</div>
+<script src="assets/js/site.js" defer></script>
+</body></html>
